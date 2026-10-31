@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# EchoMap Edge
 
-# Run and deploy your AI Studio app
+EchoMap Edge is an accessibility, emergency assistance, and offline-first disaster preparedness application.
 
-This contains everything you need to run your app locally.
+## Web Application
 
-View your app in AI Studio: https://ai.studio/apps/08ded98a-a470-4673-bc3b-02675fa7e972
+### Run Locally
 
-## Run Locally
+Prerequisites: Node.js
 
-**Prerequisites:**  Node.js
+1. Install dependencies: `npm install`
+2. Set `GEMINI_API_KEY` in `.env.local` if Gemini features are used.
+3. Start the app: `npm run dev`
+4. Open `http://localhost:3000`
 
+### Verify
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Build: `npm run build`
+- Type-check: `npm run lint`
+
+## Android Research Prototype
+
+The repository also contains the EchoMap Edge Android audio feasibility prototype.
+
+### Phase 1 Scope
+
+- Linear FM chirp generation
+- Low-latency speaker playback
+- Microphone recording
+- Synchronized emit-and-record scanning
+- Waveform and signal statistics
+- Strict offline operation
+
+### Build Android App
+
+Prerequisites: Android Studio, JDK 17, and Android SDK API 34.
+
+```bash
+./gradlew assembleDebug
+./gradlew test
+```
+
+Install the debug APK on a connected device:
+
+```bash
+adb install -r app/build/outputs/apk/debug/app-debug.apk
