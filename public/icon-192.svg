@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="42" fill="#0f172a"/>
+  <!-- Concentric sonar radar rings -->
+  <circle cx="96" cy="96" r="70" fill="none" stroke="#334155" stroke-width="3" stroke-dasharray="4 4"/>
+  <circle cx="96" cy="96" r="48" fill="none" stroke="#f59e0b" stroke-width="4" stroke-opacity="0.8"/>
+  <circle cx="96" cy="96" r="26" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  <!-- Central Pulse Pin -->
+  <circle cx="96" cy="96" r="10" fill="#f59e0b"/>
+  <!-- Directional sweep wedge -->
+  <path d="M96 96 L60 30 A80 80 0 0 1 132 30 Z" fill="#f59e0b" fill-opacity="0.25"/>
+  <!-- Emergency Shield indicator -->
+  <path d="M96 138 L84 148 C84 160 96 168 96 168 C96 168 108 160 108 148 Z" fill="#ef4444"/>
+</svg>

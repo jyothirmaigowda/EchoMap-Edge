@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* High Contrast mode accessibility overrides when active */
+.high-contrast {
+  --tw-border-opacity: 1;
+  filter: contrast(115%);
+}
+
+.high-contrast button, 
+.high-contrast a, 
+.high-contrast input {
+  outline-width: 3px !important;
+}
+
+/* High visibility focus ring for TalkBack and keyboard navigators */
+:focus-visible {
+  outline: 3px solid #f59e0b !important;
+  outline-offset: 3px !important;
+}
+

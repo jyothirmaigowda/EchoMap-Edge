@@ -1,0 +1,12 @@
+{
+  "name": "EchoMap Edge",
+  "description": "Offline-first Edge AI assistant for accessibility, emergency assistance, and disaster preparedness.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
